@@ -35,7 +35,7 @@ namespace LootOverhaul
                         continue;
                     
                     LootExecuted(equipmentElement.Item);
-                    SubModule.WriteLootMessage(equipmentElement);
+                    LootOverhaul.WriteLootMessage(equipmentElement);
                     itemsLooted++;
                 }
                 catch (Exception ex)

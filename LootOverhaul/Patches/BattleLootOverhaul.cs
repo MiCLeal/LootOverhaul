@@ -50,7 +50,7 @@ namespace LootOverhaul
                             continue;
                         
                         LootOverhaul.Loot(equipmentElement.Item);
-                        SubModule.WriteLootMessage(equipmentElement,!affectedAgent.Team.IsPlayerAlly);
+                        LootOverhaul.WriteLootMessage(equipmentElement,!affectedAgent.Team.IsPlayerAlly);
                         itemsLooted++;
 
                         if (itemsLooted >= LootOverhaulSettings.Instance.MaxItemsPerUnit)
